@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_passeport_nj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Passeport" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/tv_titre_passeport_nj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSEPORT TEMPOREL"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_res_nom_nj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titre_passeport_nj"
+            android:layout_marginTop="16dp"
+            android:text="Nom : " />
+
+        <TextView
+            android:id="@+id/tv_res_age_nj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_res_nom_nj"
+            android:layout_marginTop="8dp"
+            android:text="Écart temporel : " />
+
+        <TextView
+            android:id="@+id/tv_res_motif_nj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_res_age_nj"
+            android:layout_marginTop="8dp"
+            android:text="Motif : " />
+
+        <Button
+            android:id="@+id/btn_approuver_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_res_motif_nj"
+            android:layout_marginTop="24dp"
+            android:text="Approuver le saut temporel" />
+
+        <Button
+            android:id="@+id/btn_refuser_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_approuver_nj"
+            android:layout_marginTop="8dp"
+            android:text="Refuser (Risque de paradoxe)" />
+
+    </RelativeLayout>
+
+</LinearLayout>

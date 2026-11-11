@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Douane Temporelle</string>
+
+    <string-array name="motifs_array_nj">
+        <item>Tourisme</item>
+        <item>Modification du passé</item>
+        <item>Fuite</item>
+    </string-array>
+</resources>
